@@ -1,4 +1,4 @@
-// sensor AHT20 - temperatura e humidade
+// sensor AHT10 - temperatura e humidade
 
 #include "humidity_sensor.h"
 #include <stdlib.h>

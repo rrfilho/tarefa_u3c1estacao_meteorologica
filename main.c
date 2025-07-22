@@ -74,7 +74,7 @@ void get_data() {
     temperature = (sensor ? humidity_sensor_temperature_read() : pressure_sensor_temperature_read()) + offsetTemperature;
     humidity = humidity_sensor_humidity_read() + offsetHumidity;
     printf("Pressao = %ld Pa\n", pressure);
-    printf("Temperatura %s = %.2f C\n", sensor ? "AHT20" : "BMP280", temperature);
+    printf("Temperatura %s = %.2f C\n", sensor ? "AHT10" : "BMP280", temperature);
     printf("Umidade = %.2f%%\n\n", humidity);
     snprintf(response, RESPONSE_SIZE, "{\"pressure\":%.3f,\"temperature\":%.2f,\"humidity\":%.2f}", pressure/1000.0, temperature, humidity);
 }
